@@ -28,7 +28,8 @@ Z = X−μ/σ
     - σ = the standard deviation of the dataset.
 
 Example in Python:
-'''sh
+
+```sh
 import numpy as np
 import pandas as pd
 
@@ -38,4 +39,4 @@ df['Z_Score'] = (df['Age'] - df['Age'].mean()) / df['Age'].std()
 
 outliers = df[np.abs(df['Z_Score']) > 3]
 print(outliers)
-'''
+```
