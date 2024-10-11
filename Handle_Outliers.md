@@ -108,9 +108,9 @@ The mode is the value that appears most frequently in a dataset. There can be mo
 
 | Measure | Best For | Situations to Use | Sensitivity to Outliers | Data Types |
 | ------- | -------- | ----------------- | ----------------------- | ---------- |
-| Mean | Normal/ Symmetric Data | - Data is symmetrically distributed -  No extreme outliers | High | Continuous |
-| Median | Skewed/ Outlier-prone Data | - Data is skewed - Contains outliers - Ordinal data | Low (Resistant to outliers) | Continuous or Ordinal |
-| Mode | Categorical/ Nominal Data | - Data is categorical (e.g., brand, color) - Need to find the most common value | Not applicable | Categorical or Ordinal |
+| Mean | Normal/ Symmetric Data | 1. Data is symmetrically distributed 2. No extreme outliers | High | Continuous |
+| Median | Skewed/ Outlier-prone Data | 1. Data is skewed 2. Contains outliers 3. Ordinal data | Low (Resistant to outliers) | Continuous or Ordinal |
+| Mode | Categorical/ Nominal Data | 1. Data is categorical (e.g., brand, color) 2. Need to find the most common value | Not applicable | Categorical or Ordinal |
 
 **Examples in Action**
   - **Income Data:** Incomes are usually **skewed** because a few people earn extremely high salaries. The **median** income is more useful than the mean because the median is not affected by the very high incomes that would skew the mean.
