@@ -60,6 +60,65 @@ print(df)
   - You want to keep the size of the dataset unchanged but reduce the effect of extreme values.
   - Outliers are not errors but may represent rare values.
 
+**When to use mean, meadian and mode:**
+The choice between using mean, median, or mode depends on the characteristics of your data and the specific question you're trying to answer. These are measures of central tendency, and each has its strengths and weaknesses depending on the data distribution, the presence of outliers, and the type of data.
+
+### 2.1 Mean (Arithmetic Average)
+The mean is the sum of all values divided by the number of values. It’s the most commonly used measure of central tendency.
+
+**When to Use the Mean:**
+  - **Data is Symmetrically Distributed:** The mean is most useful when the data is normally distributed (bell-shaped curve) or when it has no significant outliers. In such cases, the mean accurately reflects the center of the data.
+  - **Continuous Data:** The mean is best for continuous variables (e.g., height, weight, age).
+  - **No Outliers:** The mean is sensitive to extreme values (outliers). If your dataset contains significant outliers, the mean can be misleading.
+
+
+**Example:**
+  - In a dataset of exam scores: [75, 80, 85, 90, 95], the mean would be 85.
+  - Use the mean if the data is distributed evenly without skewness or extreme outliers.
+
+
+### 2.2 Median (Middle Value)
+The median is the middle value in a dataset when the values are arranged in ascending or descending order. If there is an even number of values, the median is the average of the two middle values.
+
+**When to Use the Median:**
+  - **Skewed Data:** The median is more appropriate when the data is skewed (i.e., it has a long tail on one side). For example, income data is often skewed because a few people earn very high incomes while most earn much less. In such cases, the median gives a better indication of the central tendency than the mean.
+  - **Presence of Outliers:** The median is robust to outliers. It is not affected by extreme values, making it a good choice if your dataset contains significant outliers.
+  - **Ordinal Data:** The median can be used for ordinal data (data that has a natural order but no consistent difference between values), such as satisfaction ratings (e.g., 1 = dissatisfied, 2 = neutral, 3 = satisfied).
+
+**Example:**
+  - In a dataset of house prices: [100,000, 150,000, 200,000, 2,000,000], the mean might be skewed by the expensive house, but the median (150,000) gives a more accurate reflection of typical house prices.
+  - Use the median when the data contains extreme values or is not symmetrically distributed.
+
+
+### 2.3. Mode (Most Frequent Value)
+The mode is the value that appears most frequently in a dataset. There can be more than one mode in a dataset (if multiple values appear with the same frequency), or no mode at all if all values are unique.
+
+**When to Use the Mode:**
+  - **Categorical Data:** The mode is especially useful for categorical data where we want to know the most common category or class. For example, in survey data, the mode might tell you the most common response.
+  - **Nominal Data:** When the data is nominal (categories without any order), such as favorite color or preferred brand, the mode is the best measure of central tendency.
+  - **Bimodal/Multimodal Distributions:** If the dataset is bimodal (has two modes) or multimodal (more than two modes), the mode is useful for identifying the most frequent values.
+
+
+**Example:**
+  - In a dataset of favorite ice cream flavors: [Vanilla, Chocolate, Vanilla, Strawberry], the mode is Vanilla, as it appears most frequently.
+  - Use the mode when you want to identify the most common category or value, especially in non-numeric data.
+
+
+**When to Use Each Measure: Quick Overview**
+
+| Measure | Best For | Situations to Use | Sensitivity to Outliers | Data Types |
+| ------- | -------- | ----------------- | ----------------------- | ---------- |
+| Mean | Normal/ Symmetric Data | - Data is symmetrically distributed -  No extreme outliers | High | Continuous |
+| Median | Skewed/ Outlier-prone Data | - Data is skewed - Contains outliers - Ordinal data | Low (Resistant to outliers) | Continuous or Ordinal |
+| Mode | Categorical/ Nominal Data | - Data is categorical (e.g., brand, color) - Need to find the most common value | Not applicable | Categorical or Ordinal |
+
+**Examples in Action**
+  - **Income Data:** Incomes are usually **skewed** because a few people earn extremely high salaries. The **median** income is more useful than the mean because the median is not affected by the very high incomes that would skew the mean.
+  - **Exam Scores:** If most students scored around the same mark and there are no outliers, the **mean** would be appropriate to represent the average performance.
+  - **Survey Data (Customer Satisfaction):** For a survey with responses like "Satisfied," "Neutral," and "Dissatisfied," the **mode** is useful because it tells you the most common response.
+  - **House Prices:** House prices can have significant outliers (very expensive houses). In such cases, the **median** is often used to represent the central tendency because it’s less sensitive to extreme values than the mean.
+
+
 ### 3. Capping (Winsorization)
 
 **Capping**, also called **winsorization**, is a method where extreme values (outliers) are capped at a certain percentile value. You don’t remove the outliers but **limit** them to a predefined threshold.
