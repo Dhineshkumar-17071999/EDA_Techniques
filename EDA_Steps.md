@@ -25,11 +25,11 @@
     Once the data is imported, it is important to clean it before analysis. Data cleaning refers to the process of handling issues like missing values, incorrect data types, and duplicates.
 
     3.1. Handling Missing Data
-        - Types of Missingness: Missing data can occur in different forms:
+         1. Types of Missingness: Missing data can occur in different forms:
             - MCAR: Missing Completely at Random
             - MAR: Missing at Random
             - MNAR: Missing Not at Random
-        - Strategies for Handling Missing Data:
+         2. Strategies for Handling Missing Data:
             - Removing Missing Data: If the proportion of missing data is low, you might drop rows or columns.
             - Imputation:
                 - Mean/Median Imputation: For numerical data.
