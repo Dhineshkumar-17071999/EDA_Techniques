@@ -51,6 +51,13 @@ You can fill missing values in a column with the mean, median, or mode depending
   - **Median:** For numerical data that is skewed.
   - **Mode:** For categorical data.
 
+**When to Use Mean?:**
+Use the mean when the data is normally distributed (symmetrical, bell-shaped). In a normal distribution, most values are close to the mean, and the mean gives a good summary of the data.
+
+**When to Use Median?:**
+Use the median when the data is skewed (not symmetrical). The median is less affected by outliers (extremely high or low values), making it a better measure of central tendency for skewed data.
+
+
 ```sh
 # Fill missing values with the mean
 df['Age'] = df['Age'].fillna(df['Age'].mean())
@@ -131,3 +138,18 @@ df['Age'] = df['Age'].fillna(df['Age'].mean())
   - Biased analysis = Unfair or incorrect results.
   - It happens when the data used isn't good, isn't complete, or is handled in a way that gives misleading answers.
   - Solution: Use good, balanced data and methods to avoid bias and get accurate results.
+
+
+### Bias Simple explanation:
+Bias is when something is unfairly tilted or influenced in a way that leads to incorrect or misleading results. It happens when certain factors are given more weight than they should, or some data is left out or misrepresented. Bias can distort the truth and make results unreliable.
+
+**Everyday Example of Bias:**
+Imagine you're doing a survey on people's favorite ice cream flavor, but you only ask people who are leaving a chocolate ice cream shop. Most of them will likely say "chocolate," but that doesn’t represent everyone’s true favorite. This is an example of bias in how you selected your participants (sample).
+
+**Types of Bias:**
+  - Data Bias: When data doesn't represent the whole population (e.g., only asking certain groups in a survey).
+  - Measurement Bias: When tools or methods used to collect data are flawed (e.g., a faulty thermometer always reads 5 degrees too high).
+  - Confirmation Bias: When people or analysts focus only on information that supports their existing beliefs and ignore contradictory data.
+
+
+
