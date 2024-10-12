@@ -110,17 +110,17 @@ df['Age'] = df['Age'].fillna(df['Age'].mean())
 
 
 ### What is Biased Analysis
-**c** happens when the results or conclusions of an analysis are unfair or incorrect because the data or methods used are not properly balanced. This means the analysis is influenced by certain factors, leading to **misleading** or **skewed results**.
+**Biased analysis** happens when the results or conclusions of an analysis are unfair or incorrect because the data or methods used are not properly balanced. This means the analysis is influenced by certain factors, leading to **misleading** or **skewed results**.
 
 **How Biased Analysis Happens:**
 
-  **1. Wrong Data:** If the data used in the analysis does not represent the entire population or situation, the results will be biased.
+  - **1. Wrong Data:** If the data used in the analysis does not represent the entire population or situation, the results will be biased.
       - Example: If you're analyzing people's favorite fruits but only ask people at a banana stand, your results will be biased toward bananas.
 
-  **2. Ignoring Important Information:** If key information is left out, the analysis may be biased because it doesn't have all the facts.
+  - **2. Ignoring Important Information:** If key information is left out, the analysis may be biased because it doesn't have all the facts.
       - Example: If you're trying to predict house prices but ignore location, the analysis will be biased because location is a critical factor.
 
-  **3. Errors in Data:** If the data used is incorrect or incomplete, it can lead to biased analysis.
+  - **3. Errors in Data:** If the data used is incorrect or incomplete, it can lead to biased analysis.
       - Example: If a temperature sensor always reads 5 degrees too high, your weather analysis will be biased.
 
   **Why It’s a Problem:**
