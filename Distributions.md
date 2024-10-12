@@ -6,6 +6,8 @@ In statistics, distribution describes how data is spread out or arranged. Differ
   - What it is: A symmetrical distribution where most data points are concentrated around the mean, and the frequency of values decreases as you move away from the mean.
   - Shape: Looks like a bell.
   - Examples: Heights, IQ scores, and many natural phenomena are normally distributed.
+
+
 Simple Example: Most people are of average height, with fewer very short or very tall people.
 
 
