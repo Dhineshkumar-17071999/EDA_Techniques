@@ -29,7 +29,6 @@
             - MCAR: Missing Completely at Random
             - MAR: Missing at Random
             - MNAR: Missing Not at Random
-
         - Strategies for Handling Missing Data:
             - Removing Missing Data: If the proportion of missing data is low, you might drop rows or columns.
             - Imputation:
@@ -48,7 +47,7 @@
             - IQR (Interquartile Range): Outliers are typically defined as values 1.5 times above or below the IQR.
             - Visualization Methods: Box plots and scatter plots are often used to detect outliers visually.
 
-4. Data Transformations
+5. Data Transformations
     After cleaning the data, the next step is to transform it into a form that is easier to analyze.
     4.1. Normalization/Standardization
         - Normalization: Scaling data between 0 and 1. Used for features that require this, such as those used in neural networks.
@@ -70,12 +69,12 @@
     - Scaling and Normalization.
     - Logarithmic transformation to handle skewed data.
 
-5. Descriptive Statistics:
+6. Descriptive Statistics:
     - Measures of central tendency: mean, median, mode.
     - Measures of dispersion: range, variance, standard deviation.
     - Skewness and kurtosis.
 
-6. Univariate Analysis (Analyzing one variable at a time)
+7. Univariate Analysis (Analyzing one variable at a time)
     Univariate analysis focuses on analyzing one variable at a time. It helps understand the distribution, central tendency, and spread of a feature.
     6.1. For Numerical Data
         - Summary Statistics:
