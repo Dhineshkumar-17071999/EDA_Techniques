@@ -124,9 +124,10 @@ df['Age'] = df['Age'].fillna(df['Age'].mean())
       - Example: If a temperature sensor always reads 5 degrees too high, your weather analysis will be biased.
 
   **Why It’s a Problem:**
-  A biased analysis gives the wrong conclusions. For example, if a biased analysis says a product is very popular based on a bad survey, you might make poor decisions like overproducing the product, wasting time and resources.
+  - A biased analysis gives the wrong conclusions. For example, if a biased analysis says a product is very popular based on a bad survey, you might make poor decisions like overproducing the product, wasting time and resources.
 
   **In Simple Terms:**
+  
     - Biased analysis = Unfair or incorrect results.
     - It happens when the data used isn't good, isn't complete, or is handled in a way that gives misleading answers.
     - Solution: Use good, balanced data and methods to avoid bias and get accurate results.
