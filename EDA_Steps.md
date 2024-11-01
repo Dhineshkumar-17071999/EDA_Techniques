@@ -46,8 +46,22 @@
             - Z-Score: Identifies outliers based on standard deviation.
             - IQR (Interquartile Range): Outliers are typically defined as values 1.5 times above or below the IQR.
             - Visualization Methods: Box plots and scatter plots are often used to detect outliers visually.
+         
+4. Feature Engineering
+    Feature engineering is the process of creating new features or transforming existing features to better represent the underlying structure of the data.
+    - 4.1. Creating Interaction Terms
+        - Polynomial Features: Interaction terms can capture non-linear relationships between variables. These are often useful in linear models.
+            - Python: PolynomialFeatures() in sklearn
 
-4. Data Transformations
+    - 4.2. Date-Time Features
+        - Extracting Components: From a date-time column, you can extract useful features such as:
+            - Year, Month, Day, Hour, Day of Week, etc.
+        - Time Series Decomposition: Breaking down time series data into trend, seasonality, and noise.
+
+    - Handling categorical variables using encoding techniques (One-Hot Encoding, Label Encoding).
+
+
+5. Data Transformations
     After cleaning the data, the next step is to transform it into a form that is easier to analyze.
     - 4.1. Normalization/Standardization
         - Normalization: Scaling data between 0 and 1. Used for features that require this, such as those used in neural networks.
@@ -69,12 +83,12 @@
     - Scaling and Normalization.
     - Logarithmic transformation to handle skewed data.
 
-5. Descriptive Statistics:
+6. Descriptive Statistics:
     - Measures of central tendency: mean, median, mode.
     - Measures of dispersion: range, variance, standard deviation.
     - Skewness and kurtosis.
 
-6. Univariate Analysis (Analyzing one variable at a time)
+7. Univariate Analysis (Analyzing one variable at a time)
     Univariate analysis focuses on analyzing one variable at a time. It helps understand the distribution, central tendency, and spread of a feature.
     - 6.1. For Numerical Data
         - Summary Statistics:
@@ -94,12 +108,12 @@
         - Bar Plot: Visual representation of frequencies.
         - Pie Chart: Proportion of each category, though less recommended for large categories.
 
-7. Bivariate Analysis (Analyzing two variables at a time)
+8. Bivariate Analysis (Analyzing two variables at a time)
     - Numerical vs. Numerical: Scatter plots, Correlation heatmaps.
     - Numerical vs. Categorical: Box plots, Violin plots.
     - Categorical vs. Categorical: Cross-tabulation, Stacked bar charts.
 
-8. Multivariate Analysis
+9. Multivariate Analysis
     Multivariate analysis involves the exploration of relationships between multiple variables simultaneously.
     - 7.1. Numerical vs. Numerical
         - Correlation: Pearson correlation coefficient measures the linear relationship between two continuous variables. Values range from -1 (perfect negative correlation) to +1 (perfect positive correlation).
@@ -116,19 +130,6 @@
         - Box Plot: Shows how numerical values differ across categories.
         - Violin Plot: Combines box plot with a density plot.
         - ANOVA (Analysis of Variance): Tests if the means of different groups are significantly different.
-
-9. Feature Engineering
-    Feature engineering is the process of creating new features or transforming existing features to better represent the underlying structure of the data.
-    - 9.1. Creating Interaction Terms
-        - Polynomial Features: Interaction terms can capture non-linear relationships between variables. These are often useful in linear models.
-            - Python: PolynomialFeatures() in sklearn
-
-    - 9.2. Date-Time Features
-        - Extracting Components: From a date-time column, you can extract useful features such as:
-            - Year, Month, Day, Hour, Day of Week, etc.
-        - Time Series Decomposition: Breaking down time series data into trend, seasonality, and noise.
-
-    - Handling categorical variables using encoding techniques (One-Hot Encoding, Label Encoding).
 
 10. Dimensionality Reduction
     When you have a large number of features, dimensionality reduction techniques help reduce the dataset’s complexity while retaining its essential structure.
