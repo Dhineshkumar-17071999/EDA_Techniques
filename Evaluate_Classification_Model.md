@@ -66,4 +66,16 @@ In this example:
 
 4. **F1 Score:**
   - Definition: The harmonic mean of precision and recall, balancing the two metrics. It’s useful when you need a single metric that accounts for both false positives and false negatives.
-  - Formula: F1 Score = 2 x $$ {Precision x Recall}{Precision + Recall}
+  - Formula: F1 Score = 2 x (Precision x Recall)/(Precision + Recall)
+  - Calculation: 2 x (0.857 x 0.75)/(0.857 + 0.75) = ~ 0.799 or 79.9% (approximate value)
+  - Interpretation: The F1 score of 79.9% suggests a balance between precision and recall. This is useful if you want a fair trade-off between catching most spam emails (recall) and minimizing false alarms (precision).
+
+
+#### Summary
+  - Accuracy gives a general idea of correctness but can be misleading if classes are imbalanced (e.g., many more "not spam" than "spam" emails).
+  - Precision focuses on how many spam predictions were actually correct, valuable when false positives are an issue.
+  - Recall focuses on how many real spam emails were caught, valuable when false negatives (missed spam) are a concern.
+  - F1 Score provides a balanced measure, useful when you need to balance precision and recall.
+
+
+In this example, the model performs reasonably well with high accuracy and precision, but slightly lower recall, meaning it misses some spam emails. The F1 score of 79.9% reflects this balance.
