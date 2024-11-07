@@ -53,7 +53,7 @@ In this example:
   - **Interpretation:** 85% of all emails were classified correctly, whether as spam or not spam.
 
 2. **Precision (for spam class):**
-  - **Definition:** The percentage of correctly predicted spam emails out of all emails predicted as spam.
+  - **Definition:** Precision is about accuracy when the model predicts something as positive.
   - **Think of it this way:** "Out of all the emails that the model marked as spam, how many are actually spam?"
   - **Formula:** Precision = TP/TP+FP
   - **Calculation:** 30/30+5 = 0.857 or 85.7%
@@ -61,7 +61,7 @@ In this example:
   - **When to Care About Precision:** When false positives are a problem. For example, marking important emails as spam by mistake could cause issues.
 
 3. **Recall (for spam class):**
-  - **Definition:** Recall is about how well the model finds all the actual spam emails.
+  - **Definition:** Recall is about catching all actual positives.
   - **Think of it this way:** "Out of all the spam emails, how many did the model actually find?"
   - **Formula:** Recall = TP/TP+FN
   - **Calculation:** 30/30+10 = 0.75 or 75%
@@ -70,6 +70,7 @@ In this example:
 
 4. **F1 Score:**
   - **Definition:** The F1 Score is a metric that balances Precision and Recall. It’s useful in situations where you need to consider both the accuracy of positive predictions (Precision) and the ability to capture all positives (Recall).
+  - **Definition:** F1 Score is a balance between Precision and Recall.
   - The F1 Score becomes especially valuable when:
     - You have an imbalanced dataset (e.g., very few positive cases).
     - Both false positives (incorrectly predicted positives) and false negatives (missed positives) are important.
