@@ -1,5 +1,16 @@
 # Evaluate Classification Model
 
+**The most commonly used metrics for classification, particularly for binary and multiclass problems, are:**
+1. **Accuracy:** Often used as a general measure of performance, especially when classes are balanced.
+2. **Precision:** Useful when false positives are costly, e.g., in fraud detection.
+3. **Recall:** Important when false negatives are costly, e.g., in medical diagnostics.
+4. **F1 Score:**  A balanced metric combining precision and recall, useful in imbalanced datasets.
+5. **ROC-AUC:** Commonly used to evaluate binary classifiers; provides an aggregate measure across thresholds.
+6. **PR-AUC:**  Particularly helpful for highly imbalanced datasets, focusing on precision and recall trade-off.
+7. **Confusion Matrix:** Provides detailed insight into the performance across different classes.
+8. **Log Loss:** Used in probabilistic classifiers to measure how well the predicted probabilities align with true labels.
+
+
 In machine learning, accuracy, precision, recall, and F1 score are metrics commonly used to evaluate classification models. Here’s a breakdown of each:
 
 
@@ -23,8 +34,8 @@ For a binary classification problem (e.g., predicting if an email is spam or not
 #### Definitions:
 - **True Positive (TP):** The model correctly predicts an email as spam when it is indeed spam.
 - **True Negative (TN):** The model correctly predicts an email as not spam when it is indeed not spam.
-- **False Positive (FP) (Type I Error):** The model incorrectly predicts an email as spam when it is actually not spam (also known as a "false alarm").
-- **False Negative (FN) (Type II Error):** The model incorrectly predicts an email as not spam when it is actually spam (missed detection).
+- **False Positive (FP) (Type I Error):** The model incorrectly predicts an email as spam when it is actually not spam (also known as a "false alarm"). (the model incorrectly predicts a positive result for a negative case)
+- **False Negative (FN) (Type II Error):** The model incorrectly predicts an email as not spam when it is actually spam (missed detection). (the model incorrectly predicts a negative result for a positive case)
 
 
 
@@ -125,3 +136,13 @@ The F1 Score is useful because it shows that our model has room to improve: the 
 **The F1 Score balances both:**
 - It requires the model to have both good Precision and good Recall to achieve a high score, which makes it useful when both false positives (flagging legitimate transactions) and false negatives (missing frauds) are undesirable.
 
+
+#### ROC-AUC
+ROC-AUC (Receiver Operating Characteristic - Area Under Curve) is a performance metric for binary classification problems that evaluates a model’s ability to distinguish between the positive and negative classes across different thresholds.
+- ROC Curve: A plot of the True Positive Rate (Recall) against the False Positive Rate at various threshold levels. It shows the trade-off between sensitivity and specificity.
+- AUC (Area Under Curve): A single scalar value that summarizes the ROC curve. Ranges from 0 to 1:
+  - AUC = 1: Perfect classifier.
+  - AUC = 0.5: No discrimination (random guessing).
+  - Higher AUC values indicate better model performance.
+
+In short, ROC-AUC measures how well a model separates classes and is especially useful for comparing models when classes are imbalanced.
