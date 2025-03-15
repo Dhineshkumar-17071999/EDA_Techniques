@@ -47,8 +47,8 @@ df_cleaned = df.dropna(thresh=len(df) * 0.5, axis=1)
 
 **A. Fill with Mean, Median, or Mode**
 You can fill missing values in a column with the mean, median, or mode depending on the nature of the data.
-  - **Mean:** For numerical data that is normally distributed.
-  - **Median:** For numerical data that is skewed.
+  - **Mean:** For numerical data that is normally distributed. (Use mean if the data is normally distributed.)
+  - **Median:** For numerical data that is skewed. (Use median if the column has outliers.)
   - **Mode:** For categorical data.
 
 **When to Use Mean?:**
